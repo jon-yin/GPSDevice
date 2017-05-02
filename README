@@ -1,0 +1,18 @@
+This project contains all of the work that I have done for the final project handin . This Project has the following items.
+1. A Project which is able to display a simple map as well as allow resize, panning, and zooming in.
+2. A directions generator which will display a highlighted path demonstrating the directions one should take to get from a start location to a destination.
+3. A drive there mode which utilizes the GPSDevice as a psuedo driver 
+4. A history of commits that I have made on the project as it has evolved..
+This project has kept most of the functionality of the previous project, one may still zoom, pan, and load various files into the mapDisplay.
+Levels of detail still remain in this projects, this project has a few improvements with regards to performance when compared to project 3. Zooming also
+functions slightly differently, as the screen will zoom in and out of the screen.In order to use the directions generator, first load a map file.  When one loads in a new file, a GPS device appears, this will be more important when using the drive there mode.
+Then input the names of the nodes in the starting location and ending location fields. Then click OK. After some time, a magenta line will appear connecting the two
+points. This is the directions path. One may also use the select Location button in order to select a node on the map. To do so, simply zoom into the map until the individual
+nodes appear as ellipses. Then either focus on the start or end location text fields(click on them). Click Select Location and then click the node on the map you wish to input. This
+should input either the name of the node or the id of the node if it has one. Note, red ellipses represent nodes with names. Finally, in order to initiate driveThere mode, follow these steps.
+Input a location that will serve as the destination in the ending location text field, the start location will be ignored. Then click the driveThere button. A confirmation message should appear stating that
+the destination location has been set. Next, go to the GPS Device and select any route. Click drive on the GPS device. The map display on the mainframe will display a pink ellipse representing the user's
+current location. This ellipse will follow the route set by the GPS Device. If it arrives near its destination, the frame will notify you that you have reached your destination. If the ellipse instead strays
+from the directionPath, then it will recalculate the directionsPath if it gets too far from it. Hitting the cancel button will stop the GPS if it doesn't reach it's destination. It also erases the directionsPath
+from the MapDisplay.
+ 
